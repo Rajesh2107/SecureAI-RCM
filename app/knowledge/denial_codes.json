@@ -1,0 +1,18 @@
+
+{
+  "CO-50": {
+    "official_description": "Non-covered services because this is not deemed a medical necessity by the payer.",
+    "plain_language": "The payer determined that the service was not medically necessary under its coverage rules.",
+    "validation_keywords": ["medical necessity", "not medically necessary", "non-covered"]
+  },
+  "CO-16": {
+    "official_description": "Claim/service lacks information or has submission/billing errors.",
+    "plain_language": "The claim is missing required information or contains a submission or billing error.",
+    "validation_keywords": ["missing information", "billing error", "claim information"]
+  },
+  "CO-197": {
+    "official_description": "Precertification/authorization/notification absent.",
+    "plain_language": "Required precertification, authorization, or notification was missing.",
+    "validation_keywords": ["authorization", "precertification", "notification"]
+  }
+}

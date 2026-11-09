@@ -1,0 +1,30 @@
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: secureai-rcm-api
+    ports:
+      - "8000:8000"
+    environment:
+      OLLAMA_URL: http://host.docker.internal:11434
+      OLLAMA_MODEL: qwen3:1.7b
+    volumes:
+      - ./logs:/app/logs
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    container_name: secureai-rcm-dashboard
+    ports:
+      - "8501:8501"
+    environment:
+      API_URL: http://backend:8000
+    volumes:
+      - ./logs:/app/logs
+    depends_on:
+      - backend
+    restart: unless-stopped

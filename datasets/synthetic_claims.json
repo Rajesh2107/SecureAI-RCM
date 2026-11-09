@@ -1,0 +1,63 @@
+
+[
+  {
+    "claim_id": "CLM-1001",
+    "patient_ref": "PAT-001",
+    "payer": "Demo Health",
+    "service": "MRI",
+    "amount": 1200,
+    "status": "Denied",
+    "denial_code": "CO-50",
+    "reason": "Medical necessity documentation missing"
+  },
+  {
+    "claim_id": "CLM-1002",
+    "patient_ref": "PAT-002",
+    "payer": "Demo Health",
+    "service": "Consultation",
+    "amount": 250,
+    "status": "Approved",
+    "denial_code": null,
+    "reason": null
+  },
+  {
+    "claim_id": "CLM-1003",
+    "patient_ref": "PAT-003",
+    "payer": "Demo Insurance",
+    "service": "CT Scan",
+    "amount": 800,
+    "status": "Denied",
+    "denial_code": "CO-16",
+    "reason": "Missing information"
+  },
+  {
+    "claim_id": "CLM-1004",
+    "patient_ref": "PAT-004",
+    "payer": "Demo Insurance",
+    "service": "Laboratory",
+    "amount": 400,
+    "status": "Pending",
+    "denial_code": null,
+    "reason": null
+  },
+  {
+    "claim_id": "CLM-1005",
+    "patient_ref": "PAT-005",
+    "payer": "Demo Health",
+    "service": "X-Ray",
+    "amount": 300,
+    "status": "Approved",
+    "denial_code": null,
+    "reason": null
+  },
+  {
+    "claim_id": "CLM-1006",
+    "patient_ref": "PAT-006",
+    "payer": "Demo Insurance",
+    "service": "Surgery",
+    "amount": 2500,
+    "status": "Denied",
+    "denial_code": "CO-197",
+    "reason": "Authorization required"
+  }
+]
